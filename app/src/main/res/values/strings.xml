@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Cadastro</string>
+    <string name="nomeTv">Nome completo</string>
+    <string name="telefoneTv">Telefone</string>
+    <string name="telefoneHint">Ex.: 12-93456-7890</string>
+    <string name="emailTv">E-mail</string>
+    <string name="listaCbText">Ingressar na lista de e-mails?</string>
+    <string name="sexoTv">Sexo</string>
+    <string name="cidadeTv">CIdade</string>
 </resources>
