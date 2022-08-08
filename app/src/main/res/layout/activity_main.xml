@@ -48,7 +48,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telefoneTv"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:inputType="phone"/>
 
     <TextView
         android:id="@+id/emailTv"
@@ -69,7 +70,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTv"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:inputType="textEmailAddress"/>
 
     <CheckBox
         android:id="@+id/listaEmailCb"
@@ -79,7 +81,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailEt"
         android:text="@string/listaCbText"
-        android:layout_marginStart="10dp" />
+        android:layout_marginStart="10dp"
+        />
 
     <TextView
         android:id="@+id/sexoTv"
@@ -106,13 +109,16 @@
             android:id="@+id/femininoRb"
             android:layout_width="118dp"
             android:layout_height="wrap_content"
-            android:text="Feminino" />
+            android:text="Feminino"
+            android:checked="true"
+             />
 
         <RadioButton
             android:id="@+id/masculinoRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masculino" />
+            android:text="Masculino"
+            />
     </RadioGroup>
 
     <TextView
@@ -154,6 +160,7 @@
         app:layout_constraintTop_toBottomOf="@id/ufTv"
         android:layout_marginStart="10dp"/>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -165,13 +172,19 @@
             android:id="@+id/limparBt"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:text="Limpar" />
+            android:text="Limpar"
+            android:onClick="limparDados"/>
 
         <Button
             android:id="@+id/salvarBt"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:text="Salvar" />
+            android:text="Salvar"
+            android:onClick="salvarDados"/>
     </LinearLayout>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
