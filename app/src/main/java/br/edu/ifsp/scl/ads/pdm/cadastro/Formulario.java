@@ -81,14 +81,11 @@ public class Formulario {
 
     @Override
     public String toString() {
-        return "Formulario{" +
-                "nome='" + nome + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", email='" + email + '\'' +
-                ", lista=" + lista +
-                ", sexo=" + sexo +
-                ", cidade='" + cidade + '\'' +
-                ", uf='" + uf + '\'' +
-                '}';
+        return  "Nome: " + nome +
+                "\nTelefone: " + telefone +
+                "\nE-mail: " + email +
+                "\nSexo: " + sexo +
+                "\nCidade: " + cidade +
+                "\nUF: " + uf;
     }
 }

@@ -165,13 +165,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/ufSp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/limparBt"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="Limpar"
             android:onClick="limparDados"/>
 
@@ -179,6 +180,7 @@
             android:id="@+id/salvarBt"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="Salvar"
             android:onClick="salvarDados"/>
     </LinearLayout>
