@@ -15,7 +15,6 @@ import br.edu.ifsp.scl.ads.pdm.cadastro.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding amb;
-    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +22,11 @@ public class MainActivity extends AppCompatActivity {
         amb = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(amb.getRoot());
 
-        spinner = amb.ufSp;
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.ufs_array, android.R.layout.simple_spinner_item);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        amb.ufSp.setAdapter(adapter);
     }
 
     public void limparDados(View view) {
@@ -36,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         amb.telefoneEt.setText("");
         amb.emailEt.setText("");
         amb.cidadeEt.setText("");
+        amb.listaEmailCb.setChecked(false);
+        amb.sexoRg.clearCheck();
+        amb.ufSp.setSelection(0);
     }
 
     public void salvarDados(View view) {

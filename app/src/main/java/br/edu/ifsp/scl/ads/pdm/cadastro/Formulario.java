@@ -84,6 +84,7 @@ public class Formulario {
         return  "Nome: " + nome +
                 "\nTelefone: " + telefone +
                 "\nE-mail: " + email +
+                "\nEstá na lista de e-mail? " + lista +
                 "\nSexo: " + sexo +
                 "\nCidade: " + cidade +
                 "\nUF: " + uf;
